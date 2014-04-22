@@ -1,0 +1,33 @@
+[gui]
+	recentrepo = C:/Users/bryanchris/Documents/git
+[user]
+	name = shouponlin
+	email = shoupon.lin@gmail.com
+[core]
+	autocrlf = false
+	safecrlf = true
+	editor = \"C:/Program Files/GitExtensions/GitExtensions.exe\" fileeditor
+	excludesfile = /Users/bryanchris/.gitignore_global
+[alias]
+	co = checkout
+	ci = commit
+	st = status
+	br = branch
+	hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+	type = cat-file -t
+	dump = cat-file -p
+[merge]
+	tool = kdiff3
+[mergetool.kdiff3]
+	path = C:/Program Files/KDiff3/kdiff3.exe
+[diff]
+	guitool = kdiff3
+[difftool.kdiff3]
+	path = C:/Program Files/KDiff3/kdiff3.exe
+	cmd = \"C:/Program Files/KDiff3/kdiff3.exe\" \"$LOCAL\" \"$REMOTE\"
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
