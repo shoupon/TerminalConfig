@@ -105,9 +105,3 @@ LANG=C
 export PATH="/usr/local/heroku/bin:$PATH"
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-
-export FACEBOOK_SECRET="657259fdbf1720ff4a3930c15ab29bb2"
-export FACEBOOK_APP_ID="1397952233812918"
-export REDISTOGO_URL="redis://redistogo:982c75e48017ec010893a064a1794d72@grideye.redistogo.com:10330/"
-export MONGOLAB_URI="mongodb://boczeratul:bocgg30cm@ds039349-a0.mongolab.com:39349/heroku_app23515786"
-export ACCESS_TOKEN="1397952233812918|oUlCo4384oqRj1U3jTMSTu07Mf0"
