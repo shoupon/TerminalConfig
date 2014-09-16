@@ -8,6 +8,7 @@ set autoread		" auto read when file is changed from outside
 set term=xterm          " enable correct functioning of home/end
 
 filetype off          " necessary to make ftdetect work on Linux
+execute pathogen#infect('bundle/{}')
 syntax on
 filetype on           " Enable filetype detection
 filetype indent on    " Enable filetype-specific indenting
@@ -97,6 +98,8 @@ fun! Replace()
     :unlet! s:word 
 endfun 
 
+" YouCompleteMe auto-completion for C family
+let g:ycm_global_ycm_extra_conf = "~/.vim/.ycm_extra_conf.py"
 
 "--------------------------------------------------------------------------- 
 " USEFUL SHORTCUTS
